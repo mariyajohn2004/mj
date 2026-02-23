@@ -11,14 +11,15 @@
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Times New Roman;
     background-color: #0b1a2b;
     color: #e6f7ff;
     line-height: 1.7;
 }
 
 .container {
-    width: 80%;
+    width: 85%;
+    max-width: 1000px;
     margin: auto;
     padding: 40px 0;
 }
@@ -31,14 +32,14 @@ header {
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 700;
     margin-bottom: 5px;
     color: #ffffff;
 }
 
 header p {
-    margin: 4px 0;
+    margin: 3px 0;
     color: #b3ecff;
 }
 
@@ -52,10 +53,10 @@ header p {
     text-decoration: none;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 .section {
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 h2 {
@@ -63,41 +64,46 @@ h2 {
     color: #00bcd4;
     border-bottom: 1px solid #00bcd4;
     padding-bottom: 6px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-/* SKILLS */
+/* EDUCATION */
 
-.skills span {
-    display: inline-block;
+.education-item {
+    margin-bottom: 20px;
+}
+
+/* SKILLS GRID */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-box {
     border: 1px solid #00bcd4;
-    padding: 6px 12px;
-    margin: 5px 5px 0 0;
+    padding: 6px 14px;
     font-size: 13px;
-    transition: 0.3s;
-}
-
-.skills span:hover {
-    background-color: #00bcd4;
-    color: #0b1a2b;
 }
 
 /* PROJECTS */
 
 .project {
-    margin-bottom: 20px;
-    padding: 15px;
     border: 1px solid #1f2f45;
-    transition: 0.3s;
-}
-
-.project:hover {
-    border-color: #00bcd4;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 .project h3 {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     color: #ffffff;
+}
+
+/* CERTIFICATIONS */
+
+.cert-list p {
+    margin: 6px 0;
 }
 
 /* FOOTER */
@@ -108,7 +114,7 @@ footer {
     border-top: 1px solid #00bcd4;
     font-size: 13px;
     color: #b3ecff;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 </style>
@@ -129,6 +135,7 @@ footer {
     </div>
 </header>
 
+<!-- ABOUT -->
 
 <div class="section">
     <h2>About Me</h2>
@@ -139,42 +146,51 @@ footer {
     </p>
 </div>
 
+<!-- EDUCATION -->
 
 <div class="section">
     <h2>Education</h2>
 
-    <p><strong>B.Tech in Cyber Security Engineering</strong><br>
-    Jyothi Engineering College, Cheruthuruthy<br>
-    CGPA: 7.12 (Till Semester 4)</p>
+    <div class="education-item">
+        <strong>B.Tech in Cyber Security Engineering</strong><br>
+        Jyothi Engineering College, Cheruthuruthy<br>
+        CGPA: 7.12 (Till Semester 4)
+    </div>
 
-    <p><strong>Class XII (2022)</strong><br>
-    Sacred Heart Convent Girls Higher Secondary School, Thrissur<br>
-    Score: 89%</p>
+    <div class="education-item">
+        <strong>Class XII (2022)</strong><br>
+        Sacred Heart Convent Girls Higher Secondary School, Thrissur<br>
+        Score: 89%
+    </div>
 
-    <p><strong>Class X (2020)</strong><br>
-    Sacred Heart Convent Girls Higher Secondary School, Thrissur<br>
-    Score: 96%</p>
+    <div class="education-item">
+        <strong>Class X (2020)</strong><br>
+        Sacred Heart Convent Girls Higher Secondary School, Thrissur<br>
+        Score: 96%
+    </div>
 </div>
 
+<!-- SKILLS -->
 
 <div class="section">
     <h2>Technical Skills</h2>
     <div class="skills">
-        <span>Python</span>
-        <span>Java</span>
-        <span>C</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>MySQL</span>
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>Linux Basics</span>
-        <span>Networking Fundamentals</span>
-        <span>OOPS</span>
+        <div class="skill-box">Python</div>
+        <div class="skill-box">Java</div>
+        <div class="skill-box">C</div>
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">MySQL</div>
+        <div class="skill-box">Git</div>
+        <div class="skill-box">GitHub</div>
+        <div class="skill-box">Linux Basics</div>
+        <div class="skill-box">Networking Fundamentals</div>
+        <div class="skill-box">OOPS</div>
     </div>
 </div>
 
+<!-- PROJECTS -->
 
 <div class="section">
     <h2>Projects</h2>
@@ -205,14 +221,18 @@ footer {
 
 </div>
 
+<!-- CERTIFICATIONS -->
 
 <div class="section">
     <h2>Certifications</h2>
-    <p>Generative AI for All – Infosys Springboard</p>
-    <p>Artificial Intelligence for All – Infosys Springboard</p>
-    <p>Introduction to Programming – Infosys Springboard</p>
+    <div class="cert-list">
+        <p>Generative AI for All – Infosys Springboard</p>
+        <p>Artificial Intelligence for All – Infosys Springboard</p>
+        <p>Introduction to Programming – Infosys Springboard</p>
+    </div>
 </div>
 
+<!-- LANGUAGES -->
 
 <div class="section">
     <h2>Languages</h2>
