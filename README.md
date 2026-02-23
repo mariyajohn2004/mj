@@ -1,11 +1,11 @@
-     <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mariya John | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
@@ -31,12 +31,10 @@ header {
 }
 
 header h1 {
-    font-family: 'Orbitron', sans-serif;
     font-size: 40px;
-    letter-spacing: 3px;
+    font-weight: bold;
     margin-bottom: 5px;
-    color: #00eaff;
-    text-shadow: 0 0 10px #00eaff, 0 0 20px rgba(0,234,255,0.6);
+    color: #ffffff;
 }
 
 header p {
@@ -66,7 +64,6 @@ h2 {
     border-bottom: 1px solid #00eaff;
     padding-bottom: 6px;
     margin-bottom: 15px;
-    text-shadow: 0 0 6px rgba(0,234,255,0.6);
 }
 
 /* SKILLS */
@@ -83,7 +80,6 @@ h2 {
 .skills span:hover {
     background: #00eaff;
     color: #0b0f1a;
-    box-shadow: 0 0 12px #00eaff;
 }
 
 /* PROJECTS */
@@ -91,18 +87,17 @@ h2 {
 .project {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #16233a;
+    border: 1px solid #1a2a44;
     transition: 0.3s;
 }
 
 .project:hover {
     border-color: #00eaff;
-    box-shadow: 0 0 15px rgba(0,234,255,0.5);
 }
 
 .project h3 {
     margin-bottom: 6px;
-    color: #9beeff;
+    color: #ffffff;
 }
 
 /* FOOTER */
