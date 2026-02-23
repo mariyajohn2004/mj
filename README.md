@@ -1,145 +1,119 @@
-<!DOCTYPE html>
+     <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mariya John | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: #0b0f1a;
+    color: #e0f7ff;
+    line-height: 1.7;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #000;
-    color: #fff;
-    overflow-x: hidden;
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
 }
+
+/* HEADER */
 
 header {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #000000, #111111);
-    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #00eaff;
 }
 
 header h1 {
-    font-size: 60px;
-    letter-spacing: 4px;
-    font-weight: 700;
-    animation: fadeDown 1s ease-in-out;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px rgba(0,234,255,0.6);
 }
 
 header p {
-    font-size: 20px;
-    margin-top: 15px;
-    color: #ccc;
-    animation: fadeUp 1.5s ease-in-out;
+    margin: 3px 0;
+    color: #9beeff;
 }
 
-button {
-    margin-top: 30px;
-    padding: 12px 30px;
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.4s;
+.contact-top {
+    margin-top: 8px;
+    font-size: 14px;
 }
 
-button:hover {
-    background: #fff;
-    color: #000;
-    box-shadow: 0 0 15px #fff;
+.contact-top a {
+    color: #00eaff;
+    text-decoration: none;
 }
 
-section {
-    padding: 100px 10%;
+/* SECTION */
+
+.section {
+    margin-top: 40px;
 }
 
 h2 {
-    font-size: 30px;
-    margin-bottom: 40px;
-    position: relative;
+    font-size: 22px;
+    color: #00eaff;
+    border-bottom: 1px solid #00eaff;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 6px rgba(0,234,255,0.6);
 }
 
-h2::after {
-    content: "";
-    width: 60px;
-    height: 3px;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-}
+/* SKILLS */
 
 .skills span {
     display: inline-block;
-    padding: 10px 20px;
-    margin: 8px;
-    border: 1px solid #fff;
+    border: 1px solid #00eaff;
+    padding: 6px 12px;
+    margin: 5px 5px 0 0;
+    font-size: 13px;
     transition: 0.3s;
 }
 
 .skills span:hover {
-    background: #fff;
-    color: #000;
-    transform: scale(1.05);
+    background: #00eaff;
+    color: #0b0f1a;
+    box-shadow: 0 0 12px #00eaff;
 }
 
-.project-card {
-    border: 1px solid #333;
-    padding: 25px;
-    margin-bottom: 30px;
-    transition: 0.4s;
+/* PROJECTS */
+
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #16233a;
+    transition: 0.3s;
 }
 
-.project-card:hover {
-    background: #111;
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+.project:hover {
+    border-color: #00eaff;
+    box-shadow: 0 0 15px rgba(0,234,255,0.5);
 }
 
-.project-card h3 {
-    margin-bottom: 15px;
+.project h3 {
+    margin-bottom: 6px;
+    color: #9beeff;
 }
 
-.contact-box p {
-    margin-bottom: 15px;
-    font-size: 18px;
-}
-
-.contact-box a {
-    color: #fff;
-    text-decoration: underline;
-}
+/* FOOTER */
 
 footer {
     text-align: center;
-    padding: 30px;
-    border-top: 1px solid #333;
-    color: #aaa;
-}
-
-/* Animations */
-@keyframes fadeDown {
-    from { opacity: 0; transform: translateY(-50px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeUp {
-    from { opacity: 0; transform: translateY(50px); }
-    to { opacity: 1; transform: translateY(0); }
+    padding: 20px;
+    border-top: 1px solid #00eaff;
+    font-size: 13px;
+    color: #7edfff;
+    margin-top: 50px;
 }
 
 </style>
@@ -147,25 +121,48 @@ footer {
 
 <body>
 
+<div class="container">
+
 <header>
     <h1>MARIYA JOHN</h1>
     <p>Cyber Security Undergraduate</p>
-    <button onclick="window.location.href='mailto:mariyajohn2027@gmail.com'">
-        Contact Me
-    </button>
+    <p>Location: Thrissur, Kerala</p>
+
+    <div class="contact-top">
+        📧 <a href="mailto:mariyajohn2027@gmail.com">mariyajohn2027@gmail.com</a> |
+        📞 <a href="tel:+917736898348">+91 7736898348</a>
+    </div>
 </header>
 
-<section>
+
+<div class="section">
     <h2>About Me</h2>
     <p>
-        I am a passionate Cyber Security undergraduate focused on secure system development,
-        application design, and innovative problem solving. I enjoy building efficient
-        software solutions and continuously enhancing my expertise in cybersecurity
-        and programming technologies.
+        Dedicated Cyber Security undergraduate with strong interest in secure system development,
+        networking fundamentals, and software application design. Passionate about building
+        efficient and secure solutions while continuously enhancing technical knowledge.
     </p>
-</section>
+</div>
 
-<section>
+
+<div class="section">
+    <h2>Education</h2>
+
+    <p><strong>B.Tech in Cyber Security Engineering</strong><br>
+    Jyothi Engineering College, Cheruthuruthy<br>
+    CGPA: 7.12 (Till Semester 4)</p>
+
+    <p><strong>Class XII (2022)</strong><br>
+    Sacred Heart Convent Girls Higher Secondary School, Thrissur<br>
+    Score: 89%</p>
+
+    <p><strong>Class X (2020)</strong><br>
+    Sacred Heart Convent Girls Higher Secondary School, Thrissur<br>
+    Score: 96%</p>
+</div>
+
+
+<div class="section">
     <h2>Technical Skills</h2>
     <div class="skills">
         <span>Python</span>
@@ -178,73 +175,59 @@ footer {
         <span>Git</span>
         <span>GitHub</span>
         <span>Linux Basics</span>
-        <span>Networking</span>
+        <span>Networking Fundamentals</span>
         <span>OOPS</span>
     </div>
-</section>
+</div>
 
-<section>
+
+<div class="section">
     <h2>Projects</h2>
 
-    <div class="project-card">
+    <div class="project">
         <h3>Vehicle Theft Detection System</h3>
         <p>
-            Developed a smart security system that detects unauthorized vehicle access
-            using identification logic and alert mechanisms to enhance vehicle protection.
+            Developed a security-based system to detect unauthorized vehicle access
+            using identification logic and alert mechanisms to enhance protection.
         </p>
     </div>
 
-    <div class="project-card">
+    <div class="project">
         <h3>User Authentication System</h3>
         <p>
-            Built a secure login and registration system with database validation,
-            ensuring proper credential verification and secure data handling.
+            Built a secure authentication system allowing user registration,
+            login validation, and database-based credential verification.
         </p>
     </div>
 
-    <div class="project-card">
+    <div class="project">
         <h3>Canteen Pre-Order Website</h3>
         <p>
-            Designed a web application allowing users to pre-order food,
+            Designed a web platform enabling students to pre-order food,
             reducing waiting time and improving order management efficiency.
         </p>
     </div>
 
-</section>
+</div>
 
-<section>
+
+<div class="section">
     <h2>Certifications</h2>
     <p>Generative AI for All – Infosys Springboard</p>
     <p>Artificial Intelligence for All – Infosys Springboard</p>
     <p>Introduction to Programming – Infosys Springboard</p>
-</section>
+</div>
 
-<section>
+
+<div class="section">
     <h2>Languages</h2>
     <p>English | Malayalam | Hindi</p>
-</section>
+</div>
 
-<section>
-    <h2>Contact</h2>
-    <div class="contact-box">
-        <p>
-            📧 Email:
-            <a href="mailto:mariyajohn2027@gmail.com">
-                mariyajohn2027@gmail.com
-            </a>
-        </p>
-
-        <p>
-            📞 Phone:
-            <a href="tel:+917736898348">
-                +91 7736898348
-            </a>
-        </p>
-    </div>
-</section>
+</div>
 
 <footer>
-    © 2026 Mariya John | All Rights Reserved
+    Designed & Developed by Mariya John
 </footer>
 
 </body>
