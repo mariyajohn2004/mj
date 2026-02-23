@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mariya John | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
 
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: #0b0f1a;
-    color: #e0f7ff;
+    background-color: #0b1a2b;
+    color: #e6f7ff;
     line-height: 1.7;
 }
 
@@ -27,32 +27,32 @@ body {
 
 header {
     padding-bottom: 25px;
-    border-bottom: 1px solid #00eaff;
+    border-bottom: 1px solid #00bcd4;
 }
 
 header h1 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 5px;
     color: #ffffff;
 }
 
 header p {
-    margin: 3px 0;
-    color: #9beeff;
+    margin: 4px 0;
+    color: #b3ecff;
 }
 
 .contact-top {
-    margin-top: 8px;
+    margin-top: 10px;
     font-size: 14px;
 }
 
 .contact-top a {
-    color: #00eaff;
+    color: #00bcd4;
     text-decoration: none;
 }
 
-/* SECTION */
+/* SECTIONS */
 
 .section {
     margin-top: 40px;
@@ -60,8 +60,8 @@ header p {
 
 h2 {
     font-size: 22px;
-    color: #00eaff;
-    border-bottom: 1px solid #00eaff;
+    color: #00bcd4;
+    border-bottom: 1px solid #00bcd4;
     padding-bottom: 6px;
     margin-bottom: 15px;
 }
@@ -70,7 +70,7 @@ h2 {
 
 .skills span {
     display: inline-block;
-    border: 1px solid #00eaff;
+    border: 1px solid #00bcd4;
     padding: 6px 12px;
     margin: 5px 5px 0 0;
     font-size: 13px;
@@ -78,8 +78,8 @@ h2 {
 }
 
 .skills span:hover {
-    background: #00eaff;
-    color: #0b0f1a;
+    background-color: #00bcd4;
+    color: #0b1a2b;
 }
 
 /* PROJECTS */
@@ -87,12 +87,12 @@ h2 {
 .project {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #1a2a44;
+    border: 1px solid #1f2f45;
     transition: 0.3s;
 }
 
 .project:hover {
-    border-color: #00eaff;
+    border-color: #00bcd4;
 }
 
 .project h3 {
@@ -105,9 +105,9 @@ h2 {
 footer {
     text-align: center;
     padding: 20px;
-    border-top: 1px solid #00eaff;
+    border-top: 1px solid #00bcd4;
     font-size: 13px;
-    color: #7edfff;
+    color: #b3ecff;
     margin-top: 50px;
 }
 
