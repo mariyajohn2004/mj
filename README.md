@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mariya John | Portfolio</title>
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -115,6 +114,16 @@ h2::after {
     margin-bottom: 15px;
 }
 
+.contact-box p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.contact-box a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
     padding: 30px;
@@ -217,7 +226,21 @@ footer {
 
 <section>
     <h2>Contact</h2>
-    <p>Email: mariyajohn2027@gmail.com</p>
+    <div class="contact-box">
+        <p>
+            📧 Email:
+            <a href="mailto:mariyajohn2027@gmail.com">
+                mariyajohn2027@gmail.com
+            </a>
+        </p>
+
+        <p>
+            📞 Phone:
+            <a href="tel:+917736898348">
+                +91 7736898348
+            </a>
+        </p>
+    </div>
 </section>
 
 <footer>
